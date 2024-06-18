@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Venugopal Reddy Nimmanapalli</h1>
+<h1 align="center">Hi 👋, I'm Venugopal Reddy</h1>
 <h3 align="center">I am a Tech lead, Full Stack IT consultant from India</h3>
 
 <h3 align="left">Connect with me:</h3>
