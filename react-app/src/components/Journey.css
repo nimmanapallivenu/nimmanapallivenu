@@ -1,0 +1,69 @@
+.journey-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.step {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.step span {
+  display: inline-flex;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.step p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+#journey {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 1024px) {
+  .journey-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .journey-steps .step:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-steps .step:last-child {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    padding: 1.15rem;
+  }
+}
+
+/* Made with Bob */

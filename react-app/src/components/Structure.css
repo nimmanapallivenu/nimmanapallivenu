@@ -1,0 +1,41 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+
+.skill-block {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+}
+
+.skill-block h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.skill-block p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+#structure {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-block {
+    padding: 1.15rem;
+  }
+}
+
+/* Made with Bob */

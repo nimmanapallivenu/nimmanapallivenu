@@ -1,0 +1,110 @@
+.topic-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-filter {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.topic-filter.active,
+.topic-filter:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.42);
+  color: #fff;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+
+.topic-card {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.32);
+}
+
+.topic-meta {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.topic-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #fff;
+}
+
+.topic-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+  min-height: 88px;
+}
+
+.topic-open-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.12);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.topic-open-btn:hover {
+  background: rgba(56, 189, 248, 0.22);
+}
+
+#topics {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 1024px) {
+  .topic-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-controls {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-card {
+    padding: 1.15rem;
+  }
+}
+
+/* Made with Bob */

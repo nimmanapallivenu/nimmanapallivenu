@@ -1,0 +1,38 @@
+.topic-detail-card {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  min-height: 280px;
+}
+
+.topic-detail-placeholder {
+  color: var(--muted);
+  margin: 0;
+}
+
+.topic-detail-header p {
+  color: var(--muted);
+}
+
+.topic-detail-body h4 {
+  margin-bottom: 0.9rem;
+  color: #fff;
+}
+
+.concept-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.concept-list li {
+  margin-bottom: 0.65rem;
+}
+
+#topic-details {
+  scroll-margin-top: 90px;
+}
+
+/* Made with Bob */

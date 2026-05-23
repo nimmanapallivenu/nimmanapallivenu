@@ -1,0 +1,53 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr;
+  gap: 1.75rem;
+}
+
+.about-content p {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.contact-card {
+  background: rgba(17, 24, 39, 0.82);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.contact-card p {
+  margin: 0.65rem 0;
+  color: var(--muted);
+}
+
+#about,
+#contact {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1.15rem;
+  }
+}
+
+/* Made with Bob */

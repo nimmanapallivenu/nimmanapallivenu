@@ -1,0 +1,127 @@
+.about-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.about-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-article {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.about-article h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.author-info {
+  background: rgba(56, 189, 248, 0.05);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.author-info h3 {
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.author-title {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.expertise-list li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: rgba(34, 197, 94, 0.05);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.expertise-list strong {
+  color: var(--accent);
+}
+
+.topics-covered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.topic-category {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.topic-category h4 {
+  color: var(--primary);
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.topic-category p {
+  color: var(--text);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-article {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-article h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .topics-covered {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Made with Bob */
